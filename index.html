@@ -162,12 +162,14 @@
         .e-sport>.row{
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;
-            gap:  8px;
-
+            /* justify-content: space-between; */
+            /* gap:  8px; */
+            margin: -6px -4px;
         }
         .e-sport>.row>.col{
-            min-width: 294px;
+            width: 16.6667%;
+            padding: 6px 4px;
+            /* margin-bottom: 5px; */
         }
         .game-card{
             display: flex;
@@ -453,6 +455,11 @@
             background-position: center;
             background-size: cover;
             background-image: url('./img/v2.png');
+        }
+        @media screen and (max-width: 1600px){
+            .e-sport>.row>.col{
+                width: 25%;
+            }
         }
     </style>
 </head>
